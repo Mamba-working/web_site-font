@@ -1,0 +1,122 @@
+body {
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    width: 98%;
+    grid-template-columns: 0.5fr 1.5fr 2fr 2fr;
+    grid-template-rows: 1fr 6fr 8fr;
+    grid-template-areas: "logo header header header" "info1 info1 svg info2" "txt txt txt txt";
+}
+
+
+/* nav,div{
+    border: 1px solid red;
+} */
+
+#logo {
+    grid-area: logo;
+}
+
+#navigation {
+    grid-area: header;
+}
+
+#info1 {
+    grid-area: info1;
+}
+
+#svg {
+    grid-area: svg;
+}
+
+#info2 {
+    grid-area: info2;
+}
+
+#texteditor {
+    grid-area: txt;
+    display: grid;
+    grid-template-rows: 0.2fr 2fr;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-areas: ". bt ." ". text .";
+}
+
+#button {
+    grid-area: bt;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+form {
+    grid-area: text;
+}
+
+#textarea {
+    width: 100%;
+    height: 100%;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav>ul>li {
+    margin: 0 3px;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+
+.sizebutton {
+    margin: 0 1px;
+    ;
+    font-size: small;
+    background-color: #009ac9;
+    border: none;
+    color: #ffffff;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+    line-height: 25px;
+    padding: 0px 6px;
+    cursor: pointer;
+}
+
+#big {
+    border-radius: 30% 0 0 30%;
+}
+
+#small {
+    border-radius: 0 30% 30% 0;
+}
+
+#button>label {
+    position: relative;
+    right: 5px;
+    font-style: italic;
+    color: #009ac9;
+    line-height: 49px;
+}
+
+.sizebutton:hover {
+    background-color: #ffffff;
+    color: #009ac9;
+    border-color: #02b6ec;
+}
+
+line.forceLine {
+    stroke: #444;
+    stroke-width: 2;
+}
+
+.forceCircle {
+    cursor: pointer;
+}
