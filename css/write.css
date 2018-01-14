@@ -67,6 +67,7 @@ nav>ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
+    padding: 5px 0;
 }
 
 nav>ul>li {
