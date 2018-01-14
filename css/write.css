@@ -127,9 +127,9 @@ line.forceLine {
 }
 #demo{
     grid-area: demo;
-    border-bottom: 1px gray solid;
     position: sticky;
     top:0;
+    background-color: rgba(220,220,220,0.5);
 }
 #demo>ul{
     display: flex;
