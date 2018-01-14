@@ -1,25 +1,30 @@
 body {
-    margin: 5px;
-    padding: 5px;
+    margin: 0;
+    padding: 0;
     display: grid;
-    width: 98%;
-    grid-template-columns: 0.5fr 1.5fr 2fr 2fr;
-    grid-template-rows: 1fr 6fr 8fr;
-    grid-template-areas: "logo header header header" "info1 info1 svg info2" "txt txt txt txt";
+    width: 100%;
+    grid-template-columns: 0.5fr  1.5fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 6fr 8fr;
+    grid-template-areas: "header header header header header"". demo demo demo . " "info1 info1 svg info2 info2" "txt txt txt txt txt";
 }
 
 
-/* nav,div{
-    border: 1px solid red;
-} */
+body{
+    background-color: rgb(242, 242, 242)
+}
 
 #logo {
     grid-area: logo;
+    background-color:#fff;
 }
-
+#navigation>img{
+    width:137px;
+    float: left;
+}
 #navigation {
     grid-area: header;
-    border-bottom: 1px gray solid;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+    background-color:#fff;
 }
 
 #info1 {
@@ -79,7 +84,6 @@ a:active {
 
 .sizebutton {
     margin: 0 1px;
-    ;
     font-size: small;
     background-color: #009ac9;
     border: none;
@@ -120,4 +124,39 @@ line.forceLine {
 
 .forceCircle {
     cursor: pointer;
+}
+#demo{
+    grid-area: demo;
+    border-bottom: 1px gray solid;
+    position: sticky;
+    top:0;
+}
+#demo>ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+#demo>ul>li{
+    margin: 0 5px;
+}
+#demo>button{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    margin: 0 1px;
+    font-size: small;
+    background-color: #009ac9;
+    border: none;
+    color: #ffffff;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+    line-height: 25px;
+    padding: 0px 6px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#demo>button:hover{
+    background-color: #ffffff;
+    color: #009ac9;
+    border-color: #02b6ec;
 }
