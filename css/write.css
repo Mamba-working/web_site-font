@@ -20,6 +20,7 @@ body{
 #navigation>img{
     width:137px;
     float: left;
+    margin: 5px 6px;
 }
 #navigation {
     grid-area: header;
