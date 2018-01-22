@@ -18,9 +18,9 @@ body{
     background-color:#fff;
 }
 #navigation>img{
-    width:137px;
+    width: 80px;
     float: left;
-    margin: 5px 6px;
+    
 }
 #navigation {
     grid-area: header;

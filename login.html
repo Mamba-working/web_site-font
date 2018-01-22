@@ -53,7 +53,8 @@
         input::-webkit-input-placeholder {
             padding: 3px 45px;
         }
-        .submit button{
+
+        .submit button {
             background: #0f88eb;
             border-radius: 3px;
             border: none;
@@ -63,6 +64,14 @@
             color: #fff;
             line-height: 1.5;
             padding:7px 0;
+            /* padding: 6px 16px;
+            border: 1px solid #446d88;
+            border-radius: 4px;
+            box-shadow: 0 1px 5px gray;
+            text-shadow: 0 -1px 1px #335166;
+            font-size: 20px;
+            line-height: 20px;
+            background: #0f88eb */
         }
     </style>
 </head>
@@ -71,7 +80,7 @@
     <div class="main">
         <h1>专利</h1>
         <h3>登入发现</h3>
-        <form>
+        <form method="post" name="login">
             <div class="username form">
                 <input type="text" name="username" placeholder="输入用户名" class="required">
             </div>
